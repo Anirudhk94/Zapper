@@ -1,0 +1,31 @@
+/* Empty. Add your own CSS if you like */
+.imagew{
+	background-color: whitesmoke;
+	/*background-repeat: no-repeat;
+    /*background-size: contain;width: 80%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    
+    background-position: center;*/
+    margin-top: 2em;
+    
+}
+.ani{
+content: url("../img/anirudh12.jpg");
+}
+
+.hold{
+margin-top: 8em;
+}
+.holdf{
+margin-top: 2em;
+}
+
+.men1{
+content: url("../img/surya.jpg");
+}
+
+.option{
+display: none;
+}
