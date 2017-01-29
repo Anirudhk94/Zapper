@@ -1,80 +1,75 @@
     
 <ion-view title="Appliances" class ="imagew">
   <ion-content>
-      
-      
-      <div class="card">
-          <div class="item item-divider">
-   Prototype Conenction
-  </div>
-  <div class="item item-text-wrap">
-    <ul class="list">
-      <li class="item item-toggle">
-       Status
-       <label class="toggle toggle-balanced">
-         <input type="checkbox" id="cha" ng-model="appliance.value0" ng-change="toggleChange(0)">
-         <div class="track">
-           <div class="handle"></div>
-         </div>
-       </label>
-      </li>
-      
-      
-    </ul>
-          </div></div>
+    <div class="card">
+      <div class="item item-divider">
+        Prototype Conenction
+      </div>
+  
+      <div class="item item-text-wrap">
+        <ul class="list">
+          <li class="item item-toggle"> Status
+            <label class="toggle toggle-balanced">
+              <input type="checkbox" id="toggle" ng-model="appliance.val" ng-change="toggleChange">
+              <div class="track">
+                <div class="handle"></div>
+              </div>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-      <div class="option" id="v">
+    <div class="option" id="appliance_list">
       <div class="card">
-          <div class="item item-divider">
-   Bluetooth controlled devices:
-  </div>
+        <div class="item item-divider">
+          Bluetooth controlled devices:
+        </div>
           
-<div class="item item-text-wrap">
-    <ul class="list">
-     
-      <div class="list">
-        <div class="item item-button-right">
-          Light
-          <div class="buttons">
-            <button class="button button-outline button-positive" ng-click="sendCommand(1)">On</button>
-            <button class="button button-outline button-positive" ng-click="sendCommand(2)">Off</button> 
-          </div>
+        <div class="item item-text-wrap">
+          <ul class="list">
+            <div class="list">
+              <div class="item item-button-right">Light
+                <div class="buttons">
+                  <button class="button button-outline button-positive" ng-click="sendCommand(1)">On</button>
+                  <button class="button button-outline button-positive" ng-click="sendCommand(2)">Off</button> 
+                </div>
+              </div>
+            </div>
+
+            <div class="list">
+              <div class="item item-button-right">
+                Fan
+                <div class="buttons">
+                  <button class="button button-outline button-positive" ng-click="sendCommand(3)">On</button>
+                  <button class="button button-outline button-positive" ng-click="sendCommand(4)">Off</button> 
+                </div>
+              </div>
+            </div>
+
+            <div class="list">
+              <div class="item item-button-right">
+                Tube
+                <div class="buttons">
+                  <button class="button button-outline button-positive" ng-click="sendCommand(5)">On</button>
+                  <button class="button button-outline button-positive" ng-click="sendCommand(6)">Off</button> 
+                </div>
+              </div>
+            </div>
+
+            <div class="list">
+              <div class="item item-button-right">
+                Plug
+                <div class="buttons">
+                  <button class="button button-outline button-positive" ng-click="sendCommand(7)">On</button>
+                  <button class="button button-outline button-positive" ng-click="sendCommand(8)">Off</button> 
+                </div>
+              </div>
+            </div>
+          </ul>
         </div>
       </div>
-
-      <div class="list">
-        <div class="item item-button-right">
-          Fan
-          <div class="buttons">
-            <button class="button button-outline button-positive" ng-click="sendCommand(3)">On</button>
-            <button class="button button-outline button-positive" ng-click="sendCommand(4)">Off</button> 
-          </div>
-        </div>
-      </div>
-
-      <div class="list">
-        <div class="item item-button-right">
-          Tube
-          <div class="buttons">
-            <button class="button button-outline button-positive" ng-click="sendCommand(5)">On</button>
-            <button class="button button-outline button-positive" ng-click="sendCommand(6)">Off</button> 
-          </div>
-        </div>
-      </div>
-
-      <div class="list">
-        <div class="item item-button-right">
-          Plug
-          <div class="buttons">
-            <button class="button button-outline button-positive" ng-click="sendCommand(7)">On</button>
-            <button class="button button-outline button-positive" ng-click="sendCommand(8)">Off</button> 
-          </div>
-        </div>
-      </div>
-
-    </ul>
-          </div>
- </div></div>
+    </div>
       
   </ion-content>
 </ion-view>
